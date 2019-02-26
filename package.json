@@ -8,6 +8,7 @@
     "start": "webpack --watch",
     "build": "webpack"
   },
+  "repository": "michal-wrzosek/xfor-text-field",
   "author": {
     "name": "Michał Wrzosek",
     "email": "michal@wrzosek.pl"
