@@ -21,10 +21,7 @@
   },
   "dependencies": {
     "prop-types": "^15.6.2",
-    "ramda": "^0.25.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "styled-components": "^3.4.9"
+    "ramda": "^0.25.0"
   },
   "devDependencies": {
     "@babel/core": "^7.3.4",
@@ -32,6 +29,9 @@
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
-    "webpack": "^2.7.0"
+    "webpack": "^2.7.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "styled-components": "^3.4.9"
   }
 }
