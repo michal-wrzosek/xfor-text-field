@@ -1,6 +1,7 @@
 {
   "name": "xfor-text-field-example",
-  "homepage": "https://Michał Wrzosek.github.io/xfor-text-field",
+  "author": "Michał Wrzosek",
+  "homepage": "https://michal-wrzosek.github.io/xfor-text-field",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
