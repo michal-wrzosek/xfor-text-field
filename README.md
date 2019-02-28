@@ -4,6 +4,10 @@
 
 [![NPM](https://img.shields.io/npm/v/xfor-text-field.svg)](https://www.npmjs.com/package/xfor-text-field) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+[Demo app with implemented component](https://michal-wrzosek.github.io/xfor-text-field/)
+
+![Demo screenshot](/demo-screenshot.png?raw=true "Demo screenshot")
+
 ## Install
 
 ```bash
