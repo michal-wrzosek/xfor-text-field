@@ -65,6 +65,8 @@ XFor TextField component is stateless so you need to wrap it in a class to manag
 
 ## License
 
-MIT © [Michał Wrzosek](https://github.com/Michał Wrzosek)
+MIT © [Michał Wrzosek](https://github.com/michal-wrzosek)
+
 michal@wrzosek.pl
+
 https://michal.wrzosek.pl
