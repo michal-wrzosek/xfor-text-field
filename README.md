@@ -6,7 +6,7 @@
 
 [Demo app with implemented component](https://michal-wrzosek.github.io/xfor-text-field/)
 
-![Demo screenshot](/demo-screenshot.png?raw=true "Demo screenshot")
+<img alt="Demo screenshot" src="/demo-screenshot.png?raw=true" width="300" />
 
 ## Install
 
