@@ -65,7 +65,68 @@ const theme = {
 };
 ```
 
-XFor TextField component is stateless so you need to wrap it in a class to manage its state. Check the example app [here](example/src/TextFieldContainer.jsx).
+XFor TextField component `dumb` as much as possible, though, you need to wrap it in a class to manage its state. Check the example app [here](example/src/TextFieldContainer.jsx).
+
+List of props you can pass to the component:
+
+```ts
+type TextFieldProps = {
+  /*
+   * Value of the input
+   */
+  value: string;
+  
+  /*
+   * Is input focused
+   */
+  isFocused: boolean;
+  
+  /*
+   * Error messages to be shown (isTouch has to be set to true to display errors)
+   */
+  errorMessage: string;
+  
+  /*
+   * Did input was touched by user (useful for displaying error messages). You don't want to show errors to the field that was not yet touched by user.
+   */
+  isTouched: boolean;
+  
+  /*
+   * Field label
+   */
+  label: string;
+  
+  /*
+   * Name of the input
+   */
+  name: string;
+  
+  /*
+   * Type of the imput: [text, password, email]
+   */
+  type: TextFieldType;
+  
+  /*
+   * Is input disabled
+   */
+  disabled: boolean,
+  
+  /*
+   * Callback func that will be called on input change
+   */
+  onChange: (event: React.FormEvent<HTMLInputElement>) => void;
+  
+  /*
+   * Callback func that will be called on input focus
+   */
+  onFocus: (event: React.FocusEvent<HTMLInputElement>) => void,
+  
+  /*
+   * Callback func that will be called on input blur
+   */
+  onBlur: (event: React.FocusEvent<HTMLInputElement>) => void,
+}
+```
 
 ## License
 

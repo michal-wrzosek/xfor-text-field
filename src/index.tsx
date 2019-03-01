@@ -46,9 +46,7 @@ const Label = styled.div``;
 const Wrapper = styled.div<WrapperProps>`
   position: relative;
   height: ${({ theme }) => theme.height}px;
-  border-bottom-width: ${({ isFocused }) => isFocused ? '2px' : '1px'};
-  border-bottom-style: solid;
-  border-bottom-color: ${({ isErrored, theme }) => isErrored ? theme.borderErroredColor : theme.borderColor};
+  box-shadow: inset 0px ${({ isFocused }) => isFocused ? '-2px' : '-1px'} 0px 0px ${({ isErrored, theme }) => isErrored ? theme.borderErroredColor : theme.borderColor};
   background-color: ${({ isErrored, disabled, theme }) => (
     disabled ?
       theme.bgDisabledColor : isErrored ?
@@ -108,16 +106,59 @@ const Wrapper = styled.div<WrapperProps>`
 type TextFieldType = 'text' | 'password' | 'email';
 
 type TextFieldProps = {
+  /*
+   * Value of the input
+   */
   value: string;
+  
+  /*
+   * Is input focused
+   */
   isFocused: boolean;
+  
+  /*
+   * Error messages to be shown (isTouch has to be set to true to display errors)
+   */
   errorMessage: string;
+  
+  /*
+   * Did input was touched by user (useful for displaying error messages). You don't want to show errors to the field that was not yet touched by user.
+   */
   isTouched: boolean;
+  
+  /*
+   * Field label
+   */
   label: string;
+  
+  /*
+   * Name of the input
+   */
   name: string;
+  
+  /*
+   * Type of the imput: [text, password, email]
+   */
   type: TextFieldType;
+  
+  /*
+   * Is input disabled
+   */
   disabled: boolean,
+  
+  /*
+   * Callback func that will be called on input change
+   */
   onChange: (event: React.FormEvent<HTMLInputElement>) => void;
+  
+  /*
+   * Callback func that will be called on input focus
+   */
   onFocus: (event: React.FocusEvent<HTMLInputElement>) => void,
+  
+  /*
+   * Callback func that will be called on input blur
+   */
   onBlur: (event: React.FocusEvent<HTMLInputElement>) => void,
 }
 
