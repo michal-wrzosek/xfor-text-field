@@ -1,6 +1,15 @@
 {
-  "main.css": "static/css/main.1e02377b.css",
-  "main.css.map": "static/css/main.1e02377b.css.map",
-  "main.js": "static/js/main.ffd406c5.js",
-  "main.js.map": "static/js/main.ffd406c5.js.map"
+  "files": {
+    "main.css": "/xfor-text-field/static/css/main.ca7384a5.chunk.css",
+    "main.js": "/xfor-text-field/static/js/main.b4287457.chunk.js",
+    "main.js.map": "/xfor-text-field/static/js/main.b4287457.chunk.js.map",
+    "runtime~main.js": "/xfor-text-field/static/js/runtime~main.95532b4e.js",
+    "runtime~main.js.map": "/xfor-text-field/static/js/runtime~main.95532b4e.js.map",
+    "static/js/2.fd9d62ca.chunk.js": "/xfor-text-field/static/js/2.fd9d62ca.chunk.js",
+    "static/js/2.fd9d62ca.chunk.js.map": "/xfor-text-field/static/js/2.fd9d62ca.chunk.js.map",
+    "index.html": "/xfor-text-field/index.html",
+    "precache-manifest.9a0dbc228198ac7ea52d23459b05d342.js": "/xfor-text-field/precache-manifest.9a0dbc228198ac7ea52d23459b05d342.js",
+    "service-worker.js": "/xfor-text-field/service-worker.js",
+    "static/css/main.ca7384a5.chunk.css.map": "/xfor-text-field/static/css/main.ca7384a5.chunk.css.map"
+  }
 }
