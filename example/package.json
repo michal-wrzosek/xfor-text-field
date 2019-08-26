@@ -1,5 +1,7 @@
 {
-  "name": "example",
+  "name": "xfor-text-field-example",
+  "author": "Michał Wrzosek",
+  "homepage": "https://michal-wrzosek.github.io/xfor-text-field",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,7 +16,7 @@
     "@types/react": "^16.8.25",
     "@types/react-dom": "^16.8.5",
     "@types/styled-components": "^4.1.18",
-    "gh-pages": "^2.1.0",
+    "gh-pages": "^2.1.1",
     "typescript": "^3.5.3"
   },
   "scripts": {
