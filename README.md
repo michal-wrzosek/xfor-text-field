@@ -1,8 +1,8 @@
 # xfor-text-field
 
-> XFor TextField React Component
+**XForTextField React Component**
 
-[![NPM](https://img.shields.io/npm/v/xfor-text-field.svg)](https://www.npmjs.com/package/xfor-text-field) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/xfor-text-field.svg)](https://www.npmjs.com/package/xfor-text-field)
 
 [Demo app with implemented component](https://michal-wrzosek.github.io/xfor-text-field/)
 
@@ -15,11 +15,10 @@ npm install --save xfor-text-field
 ```
 
 Peer dependencies:
-- prop-types: ^15.5.4
-- react: ^15.0.0 || ^16.0.0
-- react-dom: ^15.0.0 || ^16.0.0
-- styled-components: ^3.4.9
-- ramda: ^0.25.0
+
+- react: ^16.8.6"
+- react-dom: ^16.8.6"
+- styled-components: ^4.3.2
 
 ## Usage
 
@@ -45,12 +44,15 @@ body {
 ```
 
 You can style this component by specifing some props in your theme (props shown here are the default ones):
+
 ```js
 const theme = {
   // ...your other theme definitions
 
-  xfor: { // namespace for XFor components
-    textField: { // styles for TextField component
+  xfor: {
+    // namespace for XFor components
+    textField: {
+      // styles for TextField component
       height: 40, // in pixels
       fontColor: '#000000',
       borderColor: '#d8d8d8',
@@ -75,57 +77,57 @@ type TextFieldProps = {
    * Value of the input
    */
   value: string;
-  
+
   /*
    * Is input focused
    */
   isFocused: boolean;
-  
+
   /*
    * Error messages to be shown (isTouch has to be set to true to display errors)
    */
   errorMessage: string;
-  
+
   /*
    * Did input was touched by user (useful for displaying error messages). You don't want to show errors to the field that was not yet touched by user.
    */
   isTouched: boolean;
-  
+
   /*
    * Field label
    */
   label: string;
-  
+
   /*
    * Name of the input
    */
   name: string;
-  
+
   /*
    * Type of the imput: [text, password, email]
    */
   type: TextFieldType;
-  
+
   /*
    * Is input disabled
    */
-  disabled: boolean,
-  
+  disabled: boolean;
+
   /*
    * Callback func that will be called on input change
    */
-  onChange: (event: React.FormEvent<HTMLInputElement>) => void;
-  
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+
   /*
    * Callback func that will be called on input focus
    */
-  onFocus: (event: React.FocusEvent<HTMLInputElement>) => void,
-  
+  onFocus: (event: React.FocusEvent<HTMLInputElement>) => void;
+
   /*
    * Callback func that will be called on input blur
    */
-  onBlur: (event: React.FocusEvent<HTMLInputElement>) => void,
-}
+  onBlur: (event: React.FocusEvent<HTMLInputElement>) => void;
+};
 ```
 
 ## License
@@ -135,3 +137,7 @@ MIT © [Michał Wrzosek](https://github.com/michal-wrzosek)
 michal@wrzosek.pl
 
 https://michal.wrzosek.pl
+
+---
+
+This package was bootstrapped with [react-component-lib](https://github.com/michal-wrzosek/react-component-lib)
